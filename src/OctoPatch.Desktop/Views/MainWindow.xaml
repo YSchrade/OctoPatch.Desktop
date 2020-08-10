@@ -1,12 +1,16 @@
-﻿<Window x:Class="OctoPatch.Desktop.MainWindow"
+﻿<reactiveui:ReactiveWindow x:Class="OctoPatch.Desktop.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OctoPatch.Desktop"
+        xmlns:reactiveui="http://reactiveui.net"
+        xmlns:nn="clr-namespace:NodeNetwork.Views;assembly=NodeNetwork"
+        xmlns:vm="clr-namespace:OctoPatch.Desktop.ViewModels"
         mc:Ignorable="d"
+        x:TypeArguments="vm:MainWindowViewModel"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <nn:NetworkView x:Name="NetworkView"></nn:NetworkView>
     </Grid>
-</Window>
+</reactiveui:ReactiveWindow>

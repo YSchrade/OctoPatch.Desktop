@@ -6,4 +6,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="NodeNetwork" Version="4.2.0" />
+    <PackageReference Include="NodeNetworkToolkit" Version="4.2.0" />
+  </ItemGroup>
+
 </Project>
